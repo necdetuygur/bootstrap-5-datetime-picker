@@ -1,0 +1,15 @@
+{
+  "name": "bootstrap-5-datetime-picker",
+  "version": "1.0.0",
+  "description": "[Demo https://necdetuygur.github.io/bootstrap-5-datetime-picker/](https://necdetuygur.github.io/bootstrap-5-datetime-picker/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-icons": "^1.11.3"
+  }
+}
