@@ -42,7 +42,7 @@
     <!-- Start -->
     <div class="container pt-3">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-4">
           <div class="card">
             <div class="card-header">Browser Default Picker</div>
             <div class="card-body">
@@ -57,44 +57,39 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <div class="card">
-            <div class="card-header">Tempus Dominus Picker</div>
+            <div class="card-header">Tempus Dominus Picker First</div>
             <div class="card-body">
-              <div
-                class="input-group date"
-                id="datetimepicker"
-                data-target-input="nearest"
-              >
-                <input
-                  type="text"
-                  class="form-control datetimepicker-input"
-                  data-target="#datetimepicker"
-                />
-                <button
-                  class="btn btn-outline-secondary"
-                  type="button"
-                  data-target="#datetimepicker"
-                  data-toggle="datetimepicker"
-                >
-                  <i class="fa-solid fa-calendar"></i>
-                </button>
-              </div>
+              <input
+                type="text"
+                class="form-control datetimepicker-input datetimepicker"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">Tempus Dominus Picker Second</div>
+            <div class="card-body">
+              <input
+                type="text"
+                class="form-control datetimepicker-input datetimepicker"
+              />
             </div>
           </div>
         </div>
       </div>
     </div>
     <script>
-      new tempusDominus.TempusDominus(
-        document.getElementById("datetimepicker"),
-        {
+      document.querySelectorAll(".datetimepicker").forEach((el) => {
+        new tempusDominus.TempusDominus(el, {
           localization: {
             format: "yyyy-MM-dd HH:mm",
             locale: "de-DE",
-            startOfTheWeek: 1
+            startOfTheWeek: 1,
           },
-          allowInputToggle: false,
+          allowInputToggle: true,
           container: undefined,
           dateRange: false,
           debug: false,
@@ -155,8 +150,8 @@
           },
           stepping: 1,
           useCurrent: true,
-        }
-      );
+        });
+      });
     </script>
 
     <!-- End -->
